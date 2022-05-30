@@ -22,7 +22,7 @@ const bodyParser = require('body-parser')
 app.use('/public', express.static(path.join(__dirname,'public')))
 app.use('/models', express.static(path.join(__dirname ,'models')))
 app.use('/static', express.static(path.join(__dirname , 'static')))
-app.set('views', path.join(__dirname, 'views'));
+app.set('/views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.json({
     limit: '2mb'
